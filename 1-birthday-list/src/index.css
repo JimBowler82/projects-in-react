@@ -1,13 +1,81 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
+
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --primary-color: rgb(75, 158, 241);
+  --text-color: #000;
+  --subtext-color: #777;
+  --letter-spacing: 2px;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--primary-color);
+  font-family: "Lato", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 400px;
+  padding: 30px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.container h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: var(--letter-spacing);
+  margin-bottom: 20px;
+}
+
+.container button {
+  background-color: var(--primary-color);
+  color: white;
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.container button:focus {
+  outline: none;
+}
+
+.person {
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+}
+
+.person div {
+  margin-left: 20px;
+}
+
+.person h4 {
+  margin-bottom: 5px;
+  letter-spacing: var(--letter-spacing);
+}
+
+.person p {
+  color: var(--subtext-color);
+}
+
+.person img {
+  width: 75px;
+  height: 74px;
+  object-fit: cover;
+  border-radius: 50%;
 }
