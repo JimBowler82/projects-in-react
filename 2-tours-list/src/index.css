@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-color: #f1f5f8;
+  --secondary-color: rgb(92, 172, 252);
+  --heading-text-color: #102a42;
+  --sub-text-color: #868686;
+  --delete-color: #bb2525;
+  --border-radius: 5px;
+  --letter-spacing: 1px;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "Lato", sans-serif;
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--background-color);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section {
+  max-width: 620px;
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  margin-top: 40px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title h2 {
+  font-size: 3rem;
+  color: var(--heading-text-color);
+  text-transform: capitalize;
+  letter-spacing: var(--letter-spacing);
+}
+
+.title .button {
+  background-color: var(--secondary-color);
+  border: none;
+  border-radius: var(--border-radius);
+  color: white;
+  font-size: 1.2rem;
+  display: block;
+  padding: 10px 20px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.title .underline {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.underline {
+  background-color: var(--secondary-color);
+  height: 5px;
+}
+
+.single-tour {
+  width: 100%;
+  background-color: #fff;
+  margin-bottom: 40px;
+  border-radius: var(--border-radius);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.single-tour img {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+  border-top-right-radius: var(--border-radius);
+  border-top-left-radius: var(--border-radius);
+}
+
+.single-tour footer {
+  padding: 24px 32px;
+}
+
+.single-tour footer p {
+  color: var(--sub-text-color);
+  font-size: 1rem;
+  word-spacing: 1.8px;
+}
+
+.single-tour footer p button {
+  border: none;
+  margin-left: 5px;
+  background: none;
+  text-transform: capitalize;
+  color: var(--secondary-color);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.single-tour footer p button:focus {
+  outline: none;
+}
+
+.single-tour footer .delete-button {
+  background: none;
+  border: 1px solid var(--delete-color);
+  border-radius: var(--border-radius);
+  color: var(--delete-color);
+  display: block;
+  padding: 5px 50px;
+  margin: 20px auto 0 auto;
+  font-size: 1rem;
+  letter-spacing: var(--letter-spacing);
+  cursor: pointer;
+}
+
+.tour-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.tour-info h4:first-of-type {
+  letter-spacing: var(--letter-spacing);
+}
+
+.tour-info .tour-price {
+  color: var(--secondary-color);
+  background-color: #e1edf8dc;
+  padding: 3px 10px;
+  border-radius: var(--border-radius);
+  letter-spacing: var(--letter-spacing);
+}
