@@ -8,10 +8,24 @@
 
     <style>
       body {
+        width: 100%;
         background: #3f3f3f;
         color: white;
         font-family: Arial, Helvetica, sans-serif;
-        padding: 30px 40px;
+        padding: 70px 80px;
+      }
+
+      header {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+      }
+
+      header img {
+        height: 45px;
+        margin-left: 20px;
+        animation: App-logo-spin infinite 20s linear;
       }
 
       ul {
@@ -30,10 +44,22 @@
       ul li a:visited {
         color: dodgerblue;
       }
+
+      @keyframes App-logo-spin {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
     </style>
   </head>
   <body>
-    <h1>Projects In React</h1>
+    <header>
+      <h1>Projects In React</h1>
+      <img src="./logo192.png" alt="react-logo" />
+    </header>
     <p>
       Small front end UI projects built in React tp practice functional
       compoents & hooks
@@ -45,6 +71,11 @@
           href="https://react-projects-birthday-list.netlify.app/"
           target="_blank"
           >1. Birthdays List</a
+        >
+      </li>
+      <li>
+        <a href="https://react-projects-tours-list.netlify.app/" target="_blank"
+          >2. Tours List</a
         >
       </li>
     </ul>
