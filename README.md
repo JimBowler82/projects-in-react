@@ -11,3 +11,4 @@ View the projects live [HERE](https://projects-in-react.netlify.app/)
 
 1. [Birthday List](https://github.com/JimBowler82/projects-in-react/tree/main/1-birthday-list)
 2. [Tours List](https://github.com/JimBowler82/projects-in-react/tree/main/2-tours-list)
+3. [Reviews Widget](https://github.com/JimBowler82/projects-in-react/tree/main/3-review-widget)
